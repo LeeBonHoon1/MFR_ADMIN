@@ -1,0 +1,581 @@
+.headerContainer {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #DCDCDC;;
+}
+
+.headerTextsContainer {
+  display: flex;
+}
+
+.headerTextsContainer a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.headerTextsContainer a:hover {
+  
+}
+
+.userMoreContainer {
+  width: 126px;
+  position: absolute;
+  margin-top: 10px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.userMoreContainer a{
+  padding: 20px;
+}
+
+.headerText1 {
+  /* position: absolute;
+  left: 1667px;
+  top: 122px; */
+  /* width: 37px;
+  height: 23px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+
+  padding: 20px;
+}
+
+.headerText2 {
+  /* position: absolute;
+  left: 1739px;
+  top: 122px; */
+  /* width: 134px;
+  height: 23px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+
+  padding: 20px;
+}
+
+.logo {
+  /* position: absolute;
+  left: 31px;
+  top: 18.01px; */
+  width: 132.73px;
+  height: 19px;
+
+  padding: 20px;
+}
+
+.bodyContainer {
+  height: calc(100vh - 57px);
+  display: flex;
+}
+
+.navigationContainer {
+  margin-top: 70px;
+  /* position: absolute;
+  left: 0px;
+  top: 159px; */
+  width: 260px;
+  /* height: 921px; */
+
+  background: #FFFFFF;
+}
+
+.subNavigationContainer {
+  margin-top: 20px;
+}
+
+.navigationContainer ul {
+
+}
+
+.navigationContainer ul>li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.navigationContainer ul>li>a {
+  text-decoration: none;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.navigationContainer ul>li>a.active {
+  color: #0072CE;
+}
+
+.contentContainer {
+  flex: 1;
+  background-color: #DCDCDC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentContainer2 {
+  height: 99%;
+  width: 99%;
+  background-color: white;
+}
+
+.fullContainer {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primaryButton {
+  /* position: absolute;
+  left: 802px;
+  top: 636px; */
+  width: 348px;
+  height: 39px;
+
+  background: #0072CE;
+
+  /* position: absolute;
+  right: 41.84%;
+  top: 636px; */
+  /* height: 39px;
+  left: 43.5%; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* line-height: 46px; */
+  /* or 230% */
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+  
+}
+
+.loginContainer {
+  /* position: absolute;
+  left: 642px;
+  top: 216px; */
+  width: 636px;
+  height: 643px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.loginContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loginTitle {
+  /* 서비스 로고/이름 */
+  /* position: absolute;
+  left: 819px;
+  top: 294px; */
+  /* width: 283px; */
+  /* height: 58px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 58px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+
+  margin-bottom: 60px;
+}
+
+.loginInput {
+  /* position: absolute;
+  left: 802px;
+  top: 405px; */
+  width: 334px;
+  height: 41px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  margin-bottom: 10px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.loginError {
+  /* 잘못된 아이디 또는 비밀번호 입니다. */
+  /* position: absolute;
+  left: 822px;
+  top: 507px; */
+  /* width: 237px; */
+  height: 22px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #FF1F1F;
+
+  margin-bottom: 10px;
+}
+
+.loginCheckboxContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 334px;
+  margin-bottom: 60px;
+}
+
+.loginCheckbox {
+  /* position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 804px;
+  top: 540px; */
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.loginCheckboxLabel {
+  /* 아이디 저장 */
+  /* position: absolute;
+  left: 833px;
+  top: 536px; */
+  width: 108px;
+  height: 26px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+
+  color: #353535;
+}
+
+
+
+.loginNavigator {
+  /* position: absolute;
+  left: 870px;
+  top: 687px; */
+  width: 212px;
+  height: 26px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #353535;
+
+  display: flex;
+  justify-content: center;
+  width: 334px; 
+}
+
+.loginNavigator a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+
+  border-left: 1px solid #353535;
+}
+
+.loginButtonContainer {
+  margin-bottom: 20px;
+}
+
+.loginNavigator a:first-child {
+  border-left: none;
+}
+
+
+.signupTitle {
+  position: absolute;
+  /* width: 235px; */
+  height: 43px;
+  left: 66px;
+  top: 82px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.signupSubTitle {
+  /* position: absolute;
+  left: 640px;
+  top: 198px; */
+  /* width: 267px; */
+  width: 300px;
+  height: 116px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 58px;
+
+  color: #000000;
+
+  margin-bottom: 60px;
+}
+
+.signUpInputContainer {
+  margin-bottom: 35px;
+}
+
+.signUpInputContainer2 {
+  display: flex;
+  align-items: center;
+}
+
+.signUpInputLabel {
+  
+
+  /* position: absolute;
+  left: 640px;
+  top: 411px; */
+  /* width: 61px; */
+  width: 153px;
+  height: 32px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.signUpInput {
+  /* position: absolute;
+  left: 824px;
+  top: 405px; */
+  width: 420px;
+  height: 41px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 107px;
+  height: 32px;
+  left: 844px;
+  top: 411px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #999999;
+}
+
+.signUpConfirmButton {  
+  /* position: absolute;
+  left: 1253px;
+  top: 406px; */
+  width: 102px;
+  height: 39px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  right: 29.94%;
+  top: 406px; */
+  height: 39px;
+  left: 65.77%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* line-height: 46px; */
+  /* or 230% */
+
+  text-align: center;
+
+  color: #000000;
+
+  background-color: #ffffff;
+  margin-left: 5px;
+}
+
+.signUpConfirmButtonActive {
+  background-color: #0072CE;
+  color: #ffffff;
+}
+
+.signUpInfo {
+  /* position: absolute;
+  left: 844px;
+  top: 455px; */
+  /* width: 389px; */
+  height: 26px;
+  
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+
+  color: #999999;
+
+  width: 498px;
+  margin-left: 164px;
+  margin-top: 5px;
+}
+
+.signUpButtonContainer {
+  text-align: center;
+}
+
+.signupResultContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpResultTextContainer {
+  height: 116px;
+  margin-bottom: 50px;
+}
+
+.signupResultText {
+  /* position: absolute;
+  left: 847px;
+  top: 389px; */
+  /* width: 258px; */
+  width: 500px;
+  /* height: 116px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 58px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.signUpResultSubTextContainer {
+  height: 52px;
+  margin-bottom: 50px;
+}
+
+.signupResultSubText {
+  /* position: absolute;
+  left: 844px;
+  top: 546px; */
+  /* width: 265px; */
+  /* height: 52px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #999999;
+}
+
+.signUpResultButtonContainer {
+  text-align: center;
+}
+
+.contentTitle {
+  /* position: absolute;
+  left: 322px;
+  top: 212px; */
+  /* width: 102px; */
+  height: 32px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+
+  margin: 20px;
+}
