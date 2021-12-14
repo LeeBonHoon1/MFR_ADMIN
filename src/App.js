@@ -7,9 +7,14 @@ import { AuthContext } from "./Context";
 
 function App() {
   const [auth, setAuth] = useState({
-    state: null,
+    state: localStorage.getItem('auth') || null,
     // state: {},
     set: (_state) => {
+      if(_state) {
+        localStorage.setItem('auth', JSON.stringify(_state));
+      } else {
+        localStorage.removeItem('auth');
+      }
       setAuth({...auth, state: _state})
     }
   });

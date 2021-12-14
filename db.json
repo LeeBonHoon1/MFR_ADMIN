@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "password": "admin",
+      "name": "이택수"
+    }
+  ],
+  "notices": [
+    {
+      "idx": 1,
+      "category": 0,
+      "title": "이용약관 개정 안내",
+      "fileName": "",
+      "regDate": "20211221",
+      "readCnt": 10
+    },
+    {
+      "idx": 2,
+      "category": 1,
+      "title": "사이트 인증서 갱신 작업 안내",
+      "fileName": "",
+      "regDate": "20211221",
+      "readCnt": 10
+    },
+    {
+      "idx": 3,
+      "category": 1,
+      "title": "템플릿 서버 증설 작업 안내",
+      "fileName": "",
+      "regDate": "20211221",
+      "readCnt": 2
+    }
+  ],
+  "workplaces": [
+    {"idx": 1, "name": "블랙캠퍼스 P1", "address": "서울 중구 순화동 175", "sms": "문자발송", "mail": "SMTP", "qr": "https://mfrs.s1.co.kr/njzqUTw"},
+    {"idx": 2, "name": "화성캠퍼스 P1", "address": "서울 중구 순화동 175", "sms": "KNOX API v1", "mail": "KNOX API v1", "qr": "https://mfr.s1.co.kr/njzqUTtw"},
+    {"idx": 3, "name": "화성캠퍼스 P2", "address": "서울 중구 순화동 175", "sms": "KNOX API v2", "mail": "KNOX API v2", "qr": "https://mfr.s1.co.kr/njzqUTtwsssdflsdmfdlskmfdlksdsgfknmerl;mgdf;lkmglfkmsdDDDsdfklmdsflkmdsm"}
+  ],
+  "servers": [
+    {"idx": 1, "name": "템플릿 서버 1", "workplace": "평택캠퍼스 P1", "state": 1, "lastStateDate": "20211221"},
+    {"idx": 2, "name": "템플릿 서버 2", "workplace": "수원캠퍼스 P1", "state": 1, "lastStateDate": "20211220"}
+  ]
+}

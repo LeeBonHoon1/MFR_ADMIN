@@ -20,7 +20,6 @@ const Navigator = () => {
   const history = useHistory();
 
   const [openedNavigatorIdxs, setOpenedNavigatorIdxs] = useState([]);
-  
 
   const openSubNavigator = (e, idx) => {
     e.preventDefault();
@@ -30,10 +29,6 @@ const Navigator = () => {
       setOpenedNavigatorIdxs([...openedNavigatorIdxs, idx]);
     }
   }
-
-  useEffect(() => {
-    console.log(history.location.pathname);
-  });
 
   return (
     <div className={style.navigationContainer}>
@@ -94,7 +89,6 @@ export default class Layout extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.context);
     window.addEventListener('click', this.closeUserMore.bind(this), false);
   }
 
@@ -128,7 +122,6 @@ export default class Layout extends React.Component {
     this.props.history.push('/');
     this.context.set(null);
   }
-
 
   render() {
     return (

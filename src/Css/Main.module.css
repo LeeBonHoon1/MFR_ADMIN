@@ -29,6 +29,7 @@
 .userMoreContainer {
   width: 126px;
   position: absolute;
+  margin-left: -30px;
   margin-top: 10px;
 
   background: #FFFFFF;
@@ -577,5 +578,692 @@
 
   color: #000000;
 
-  margin: 20px;
+  /* margin: 20px; */
+  margin: 20px 50px;
+}
+
+.tableContainer {
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  /* width: 1521px;
+  height: 653px; */
+  width: 100%;
+  max-width: 1521px;
+  
+
+  
+  box-sizing: border-box;
+
+  margin: 30px 50px;
+}
+
+.tableContainer2 {
+  min-height: 653px;
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+.tableContainer2 table {
+  width: 100%;
+  text-align: center;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableContainer2 table thead {
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 1521px;
+  height: 40px;
+
+  background: #C4C4C4;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.tableContainer2 table tbody tr{
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 1521px;
+  height: 40px;
+
+  background: #FFFFFF;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.topButtonContainer {
+  height: 39px;
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+.topButton {
+  /* position: absolute;
+  left: 6px;
+  top: 2px; */
+  /* width: 85px; */
+  height: 39px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  height: 39px;
+  left: 30%;
+  right: 33%;
+  top: 2px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* line-height: 46px; */
+  /* or 230% */
+
+  color: #000000;
+  background-color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+.modalTitle {
+  /* position: absolute;
+  width: 127px;
+  height: 32px;
+  left: 857px;
+  top: 243px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+
+  margin: 30px 0;
+}
+
+.modalTitle2 {
+  /* position: absolute;
+  width: 127px;
+  height: 32px;
+  left: 857px;
+  top: 243px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+
+  margin-bottom: 20px;
+}
+
+.modalFormLabel1 {
+  /* position: absolute;
+  width: 41px;
+  height: 32px;
+  left: 857px;
+  top: 311px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+  display: inline-block;
+  width: 120px;
+}
+
+.modalFormLabel2 {
+  /* position: absolute;
+  width: 41px;
+  height: 32px;
+  left: 857px;
+  top: 311px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+  /* margin-left: 78px; */
+  
+  display: inline-block;
+  width: 88px;
+  text-align: right;
+
+  margin-left: 68px;
+  margin-right: 10px;
+}
+
+.modalFormInputText1 {
+  /* position: absolute;
+  left: 969px;
+  top: 301px; */
+  width: 657px;
+  height: 41px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* 입력해주세요 */
+
+
+  /* position: absolute;
+  width: 122px;
+  height: 32px;
+  left: 976px;
+  top: 307px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  /* color: #959595; */
+}
+
+.modalFormInputText2 {
+  /* position: absolute;
+  left: 617px;
+  top: 122.69px; */
+  width: 241px;
+  height: 39.42px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 92px;
+  height: 22.12px;
+  left: 631px;
+  top: 130.38px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  /* color: #AEAEAE; */
+
+  
+}
+
+.modalFormInputText3 {
+  /* position: absolute;
+  left: 869px;
+  top: 122.69px; */
+  width: 358px;
+  height: 39.42px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  margin-left: 12px;
+}
+
+.modalFormInputText4 {
+  /* position: absolute;
+  left: 617px;
+  top: 176.54px; */
+  width: 610px;
+  height: 40.38px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.modalFormInputText5 {
+  /* position: absolute;
+  left: 729px;
+  top: 286.15px; */
+  width: 498px;
+  height: 40.38px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.modalFormInputText6 {
+  /* position: absolute;
+  left: 838px;
+  top: 635.19px; */
+  width: 209px;
+  height: 36.54px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 56px;
+  height: 22.12px;
+  left: 850px;
+  top: 642.88px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #AEAEAE;
+
+  margin-left: 10px;
+}
+
+.modalFormInputText6:disabled {
+  border: none;
+}
+
+.modalFormInputText7 {
+  /* position: absolute;
+  left: 838px;
+  top: 813.86px; */
+  width: 160px;
+  height: 36.54px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 37px;
+  height: 22.12px;
+  left: 850px;
+  top: 821.56px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  /* color: #AEAEAE; */
+  
+  margin-left: 10px;
+}
+
+.modalFormSelect1 {
+  /* position: absolute;
+  left: 969px;
+  top: 349px; */
+  width: 246px;
+  height: 41px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 41px;
+  height: 32px;
+  left: 976px;
+  top: 354px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #959595;
+}
+
+.modalFormTextarea1 {
+  /* position: absolute;
+  left: 969px;
+  top: 398px; */
+  width: 657px;
+  height: 182px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.modalContainer {
+  padding: 0 50px;
+}
+
+.modalRow1 {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.modalRow2 {
+  margin: 10px 0;
+  display: flex;
+}
+
+.modalRow3 {
+  margin: 10px 0;
+  display: flex;
+  align-items: end;
+}
+
+.modalFormCancelButton {
+  /* position: absolute;
+  top: 22.22%;
+  left: calc(50% - 171.5px/2 - 93.75px);
+  bottom: 22.22%; */
+  
+  width: 171.5px;
+
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  /* position: absolute;
+  width: 127.6px;
+  left: calc(50% - 127.6px/2 - 93.75px);
+  top: 33.33%;
+  bottom: 33.33%; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+
+  color: #353535;
+
+  margin: 0 10px;
+}
+
+.modalFormConfirmButton {
+  /* position: absolute;
+  top: 22.22%;
+  left: calc(50% - 171.5px/2 + 93.75px);
+  bottom: 22.22%; */
+  width: 171.5px;
+
+  background: #0072CE;
+  border-radius: 4px;
+
+  /* position: absolute;
+  height: 39px;
+  left: 30%;
+  right: 33%;
+  top: 2px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 46px;
+  /* or 230% */
+
+  color: #FFFFFF;
+  margin: 0 10px;
+
+}
+
+.modalFormButtonsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modalFormFileContainer {
+  width: 521px;
+  height: 58px;
+  left: 969px;
+  top: 597px;
+
+  margin-right: 20px;
+}
+
+.modalFormSelect2 {
+  /* position: absolute;
+  left: 969px;
+  top: 698px; */
+  width: 123px;
+  height: 36px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 81px;
+  height: 32px;
+  left: 975px;
+  top: 703px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.modalFormImageRangeContainer {
+  margin-left: 30px;
+}
+
+.modalSubTitle {
+  /* position: absolute;
+  left: 478px;
+  top: 85.19px; */
+  /* width: 81px; */
+  height: 30.77px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+
+  color: #000000;
+}
+
+.modalSubContainer {
+  padding: 0 20px;
+}
+
+.modalFormGenButton1 {
+  /* position: absolute;
+  left: 617px;
+  top: 288.08px; */
+  width: 102px;
+  height: 37.5px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  left: 32.64%;
+  right: 63.06%;
+  top: 288.08px; */
+  height: 37.5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* line-height: 46px; */
+  /* or 230% */
+
+  text-align: center;
+
+  color: #000000;
+  
+  margin-right: 10px;
+  background-color: #FFFFFF;
+}
+
+.modalFormDownloadButton1 {
+  /* position: absolute;
+  left: 617px;
+  top: 288.08px; */
+  width: 102px;
+  height: 37.5px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  left: 32.64%;
+  right: 63.06%;
+  top: 288.08px; */
+  height: 37.5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* line-height: 46px; */
+  /* or 230% */
+
+  text-align: center;
+
+  color: #000000;
+  
+  margin-right: 10px;
+  background-color: #FFFFFF;
+}
+
+.qrImageContainer {
+  /* position: absolute;
+  left: 729px;
+  top: 340.96px; */
+  width: 156px;
+  height: 150px;
+  
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  left: 747px;
+  top: 403.46px;
+  width: 127px;
+  height: 24.04px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #000000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 232px;
+  margin-right: 10px;
+}
+
+.modalFormInputRadio {
+  
+}
+
+.modalFormRadioLabel {
+  /* position: absolute;
+  width: 81px;
+  height: 30.77px;
+  left: 670px;
+  top: 638.08px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+
+  color: #000000;
+}
+
+.modalFormRadioContainer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.modalFormRadioContainer2 {
+  width: 180px;
 }

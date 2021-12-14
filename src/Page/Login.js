@@ -2,6 +2,7 @@ import React from 'react';
 import style from '../Css/Main.module.css';
 import { AuthContext } from '../Context';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const CheckBox = (props) => {
   return (
@@ -21,6 +22,8 @@ export default class Login extends React.Component {
     this.state = {
       id: '',
       password: '',
+      savedLogin: false,
+      autoLogin: false,
       error: false,
     }
 
@@ -29,7 +32,22 @@ export default class Login extends React.Component {
   }
 
   componentDidMount() {
+    window.addEventListener('keydown', this.handleKeydownWindow.bind(this), false);
+  }
 
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.handleKeydownWindow.bind(this), false);
+  }
+
+  handleKeydownWindow(e) {
+    // console.log(e.keyCode);
+    switch(e.keyCode) {
+      case 13:
+        this.login();
+        break;
+      default:
+        break;
+    }
   }
 
   handleChangeInput(e) {
@@ -40,22 +58,20 @@ export default class Login extends React.Component {
   }
 
   login() {
-    const {id, password} = this.state;
+    const {id: _id, password: _password} = this.state;
 
     // Todo... login logic
-    if(id !== 'admin') {
-      this.setState({...this.state, error: true});
-      return;
-    } else if (password !== 'admin') {
-      this.setState({...this.state, error: true});
-      return ;
-    }
-
-    const name = '이택수';
-
-    this.props.history.push('/');
-    this.context.set({
-      id, password, name,
+    axios.get(`http://localhost:4000/users?user=${_id}&password=${_password}`)
+    .then((res) => {
+      if(res.data.length > 0) {
+        const {id, password, name} = res.data[0];
+        this.context.set({
+          id, password, name,
+        });    
+        this.props.history.push('/');
+      } else {
+        this.setState({...this.state, error: true});
+      }
     });
     // end Todo... login logic
   }
@@ -72,8 +88,8 @@ export default class Login extends React.Component {
               {this.state.error ? '잘못된 아이디 또는 비밀번호 입니다.' : ''}
             </div>
             <div className={style.loginCheckboxContainer}>
-              <CheckBox label="아이디 저장" />
-              <CheckBox label="로그인 상태유지" />
+              <CheckBox label="아이디 저장" value={this.state.savedLogin} />
+              <CheckBox label="로그인 상태유지" value={this.state.autoLogin} />
             </div>
             <div className={style.loginButtonContainer}>
               <button className={style.primaryButton} onClick={this.login}>로그인</button>
