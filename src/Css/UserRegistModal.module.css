@@ -19,3 +19,57 @@
 .modalContainer {
   padding: 30px;
 }
+
+.nameComtainer {
+  display: flex;
+}
+
+.name {
+  width: 120px;
+  height: 30.77px;
+  margin-top: 30px;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+
+  color: #000000;
+}
+
+.inputText {
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 200px;
+  height: 40px;
+}
+
+.inputText1 {
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 400px;
+  height: 250px;
+}
+
+.btn {
+  text-align: center;
+  padding: 30px;
+}
+
+.cancelBtn {
+  width: 171.5px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.sendBtn {
+  color: white;
+  width: 171.5px;
+  height: 40px;
+  background: #0072ce;
+  border-radius: 4px;
+}
