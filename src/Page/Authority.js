@@ -86,7 +86,7 @@ export default class Authority extends React.Component {
   render() {
     return (
       <div>
-        <div className={style.contentTitle}>권한 관리</div>
+        <div className={style.contentTitle2}>권한 관리</div>
         <div className={style.layoutContainer2Container}>
           <div className={style.box4}>
             <div className={style.box4Cotnainer}>

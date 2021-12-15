@@ -579,7 +579,28 @@
   color: #000000;
 
   /* margin: 20px; */
+  margin: 10px 50px;
+}
+
+.contentTitle2 {
+  /* position: absolute;
+  left: 322px;
+  top: 212px; */
+  /* width: 102px; */
+  height: 32px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* margin: 20px; */
   margin: 20px 50px;
+  margin-bottom: 10px;
 }
 
 .tableContainer {
@@ -594,7 +615,7 @@
   
   box-sizing: border-box;
 
-  margin: 30px 50px;
+  margin: 20px 50px;
 }
 
 .tableContainer2 {
@@ -1272,7 +1293,7 @@
   left: 298px;
   top: 245px; */
   width: 1568px;
-  height: 139px;
+  height: 100px;
 
   background: #F1F1F1;
 
@@ -1297,7 +1318,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin: 20px 100px;
+  margin-left: 20px;
 }
 
 .box1ButtonContainer {
@@ -1349,7 +1370,7 @@
 
 .layoutContainer1 {
   display: flex;
-  margin: 20px 100px;
+  margin: 0 100px;
 }
 
 .layoutContainer1>div:first-child {
@@ -1382,7 +1403,7 @@
   top: 434px; */
   width: 440px;
   /* height: 599px; */
-  height: 680px;
+  height: 660px;
 
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -1417,7 +1438,7 @@
   display: flex;
 
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .box2Label {
@@ -1694,9 +1715,9 @@
 
   background: #F1F1F1;
   padding: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   margin-left: 20px;
-  padding: 20px;
+  padding: 10px 20px;
 
   display: flex;
   justify-content: space-between;
@@ -1864,7 +1885,7 @@
   left: 298px;
   top: 224px; */
   width: 1568px;
-  height: 112px;
+  height: 90px;
 
   background: #F1F1F1;
   
@@ -1996,7 +2017,7 @@
 }
 
 .layoutContainer2>div {
-  margin: 30px;
+  margin: 10px 30px;
 }
 
 .layoutContainer2TopContainer {
