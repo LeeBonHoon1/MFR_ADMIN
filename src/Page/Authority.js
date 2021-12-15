@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import Table from "../Component/Table4";
+import SubTable from "../Component/Table5";
 import style from "../Css/Main.module.css";
 import uStyle from "../Css/UserRegistModal.module.css";
 
@@ -39,7 +40,22 @@ export default class Authority extends React.Component {
     });
   }
 
-  handleClickCheckbox(idx) {
+  handleClickRow(idx) {
+    console.log('handleClickRow ::: ', idx);
+
+    axios.get("http://localhost:4000/workplacesByUserIdx").then((res) => {
+      if (res.data) {
+        this.setState({
+          ...this.state,
+          data2: res.data.map((v) => ({
+            ...v,
+          })),
+        });
+      }
+    });
+  }
+
+  handleChangeCheckbox(idx) {
     const _checkedIdx = this.state.checkedIdxs;
 
     if (_checkedIdx.includes(idx)) {
@@ -142,7 +158,8 @@ export default class Authority extends React.Component {
                   lastStateDate: 25,
                 }}
                 data={this.state.data}
-                onClickCheckbox={this.handleClickCheckbox.bind(this)}
+                onChangeCheckbox={this.handleChangeCheckbox.bind(this)}
+                onClickRow={this.handleClickRow.bind(this)}
               />
             </div>
             <div>
@@ -164,21 +181,16 @@ export default class Authority extends React.Component {
                   </div>
                 )}
                 {this.state.data2 && (
-                  <Table
+                  <SubTable
                     columnNames={{
-                      name: "이름",
-                      phone: "휴대전화 번호",
-                      joined: "회원가입",
-                      lastStateDate: "최종 상태 일자",
+                      workplace: "사업장",
+                      power: "권한",
                     }}
                     columnWidths={{
-                      name: 25,
-                      phone: 30,
-                      joined: 15,
-                      lastStateDate: 25,
+                      workplace: 60,
+                      power: 35,
                     }}
-                    data={this.state.data}
-                    onClickCheckbox={this.handleClickCheckbox.bind(this)}
+                    data={this.state.data2}
                   />
                 )}
               </div>

@@ -2093,3 +2093,70 @@
   background-color: #FFFFFF;
   margin-left: 10px;
 }
+
+.tableContainer6 {
+  /* min-height: 653px; */
+  width: 887px;
+  border: 1px solid #000000;
+  height: 100%;
+}
+
+.tableContainer6 table {
+  width: 100%;
+  text-align: center;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableContainer6 table thead {
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 887px;
+  height: 40px;
+
+  background: #C4C4C4;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.tableContainer6 table tbody tr{
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  /* width: 887px; */
+  height: 40px;
+
+  background: #FFFFFF;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}

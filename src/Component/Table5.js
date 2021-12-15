@@ -49,14 +49,13 @@ const Table = (props) => {
 
   return (
     <>
-      <div className={style.tableContainer5}>
+      <div className={style.tableContainer6}>
         <table 
           // ref={container}
         >
           <thead>
             <tr>
-              <th width="5%"></th>
-              <th width="5%">번호</th>
+              <th width="15%">번호</th>
               {props.columnNames && Object.keys(props.columnNames).map((v, i) => (
                 <th key={i} width={`${props?.columnWidths[v]+'%' || ''}` }>{props.columnNames[v]}</th>
               ))}
@@ -65,7 +64,6 @@ const Table = (props) => {
           <tbody>
             {props?.data?.map((v, i) => (
               <tr key={i} onClick={(e) => {handleClickRow(e, v.idx)}}>
-                <td><input type="checkbox" onChange={(e) => {handleChangeCheckbox(e, v.idx)}} /></td>
                 <td>{props.data.length - i}</td>
                 {props.columnNames && Object.keys(props?.columnNames).map((vv, ii) => (
                   <td key={ii} 

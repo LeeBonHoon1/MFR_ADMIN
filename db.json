@@ -99,5 +99,22 @@
     {"idx": 13, "name": "이*하", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-21"},
     {"idx": 14, "name": "김*자", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-22"},
     {"idx": 15, "name": "배*서", "phone": "010-0000-0000", "joined": 1, "lastStateDate":	"2021-12-22"}
+  ],
+  "workplacesByUserIdx": [
+    {"workplace": "평택캠퍼스 P2", "power": 1},
+    {"workplace": "평택캠퍼스 P3", "power": 1},
+    {"workplace": "평택캠퍼스 P4", "power": 1},
+    {"workplace": "평택캠퍼스 P5", "power": 1},
+    {"workplace": "평택캠퍼스 P6", "power": 1},
+    {"workplace": "평택캠퍼스 P7", "power": 1},
+    {"workplace": "네이버스퀘어 S4", "power": 1},
+    {"workplace": "네이버스퀘어 S5", "power": 1},
+    {"workplace": "네이버스퀘어 S2", "power": 1},
+    {"workplace": "네이버스퀘어 S1", "power": 1},
+    {"workplace": "네이버스퀘어 S3", "power": 1},
+    {"workplace": "화성캠퍼스 P1", "power": 1},
+    {"workplace": "화성캠퍼스 P2", "power": 1},
+    {"workplace": "화성캠퍼스 P3", "power": 1},
+    {"workplace": "화성캠퍼스 P4", "power": 1}  
   ]
 }
