@@ -1,19 +1,16 @@
-import axios from 'axios';
-import React from 'react';
-import Table from '../Component/Table4';
-import style from '../Css/Main.module.css';
+import axios from "axios";
+import React from "react";
+import Table from "../Component/Table4";
+import style from "../Css/Main.module.css";
+import uStyle from "../Css/UserRegistModal.module.css";
 
-import inputDateRangeExamPng from '../assets/input-date-range-exam.png';
-import closeIconPng from '../assets/close-icon.png';
-import ReactModal from 'react-modal';
-import WorkplaceModifyModal from '../Component/WorkplaceModifyModal';
-import UserRegistModal from '../Component/UserRegistModal';
+import inputDateRangeExamPng from "../assets/input-date-range-exam.png";
+import closeIconPng from "../assets/close-icon.png";
+import ReactModal from "react-modal";
+import WorkplaceModifyModal from "../Component/WorkplaceModifyModal";
+import UserRegistModal from "../Component/UserRegistModal";
 
-const JOINED = [
-  '미완료',
-  '완료',
-]
-
+const JOINED = ["미완료", "완료"];
 
 export default class Authority extends React.Component {
   constructor(props) {
@@ -25,19 +22,18 @@ export default class Authority extends React.Component {
       openedRegistModal: false,
       openedModifyModal: false,
       checkedIdxs: [],
-    }
+    };
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/userinfos')
-    .then((res) => {
-      if(res.data) {
+    axios.get("http://localhost:4000/userinfos").then((res) => {
+      if (res.data) {
         this.setState({
-          ...this.state, 
+          ...this.state,
           data: res.data.map((v) => ({
-            ...v, 
+            ...v,
             joined: JOINED[v.joined],
-          }))
+          })),
         });
       }
     });
@@ -46,10 +42,10 @@ export default class Authority extends React.Component {
   handleClickCheckbox(idx) {
     const _checkedIdx = this.state.checkedIdxs;
 
-    if(_checkedIdx.includes(idx)) {
+    if (_checkedIdx.includes(idx)) {
       this.setState({
         ...this.state,
-        checkedIdxs: _checkedIdx.filter((v) => (v.idx !== idx)),
+        checkedIdxs: _checkedIdx.filter((v) => v.idx !== idx),
       });
     } else {
       this.setState({
@@ -66,7 +62,7 @@ export default class Authority extends React.Component {
     });
   }
 
-  closeRegistModal() { 
+  closeRegistModal() {
     this.setState({
       ...this.state,
       openedRegistModal: false,
@@ -80,7 +76,7 @@ export default class Authority extends React.Component {
     });
   }
 
-  closeModifyModal() { 
+  closeModifyModal() {
     this.setState({
       ...this.state,
       openedModifyModal: false,
@@ -124,30 +120,66 @@ export default class Authority extends React.Component {
                 <div className={style.contentSubTitle}>사용자 정보</div>
                 <div>
                   <button className={style.layoutContainer2Button}>삭제</button>
-                  <button className={style.layoutContainer2Button} onClick={this.openRegistModal.bind(this)}>신규등록</button>
+                  <button
+                    className={style.layoutContainer2Button}
+                    onClick={this.openRegistModal.bind(this)}
+                  >
+                    신규등록
+                  </button>
                 </div>
               </div>
-              <Table 
-                columnNames={{name: '이름', phone: '휴대전화 번호', joined: '회원가입', lastStateDate: "최종 상태 일자"}}
-                columnWidths={{name: 25, phone: 30, joined: 15, lastStateDate: 25}} 
-                data={this.state.data} 
-                onClickCheckbox={this.handleClickCheckbox.bind(this)} />
+              <Table
+                columnNames={{
+                  name: "이름",
+                  phone: "휴대전화 번호",
+                  joined: "회원가입",
+                  lastStateDate: "최종 상태 일자",
+                }}
+                columnWidths={{
+                  name: 25,
+                  phone: 30,
+                  joined: 15,
+                  lastStateDate: 25,
+                }}
+                data={this.state.data}
+                onClickCheckbox={this.handleClickCheckbox.bind(this)}
+              />
             </div>
             <div>
               <div className={style.layoutContainer2TopContainer}>
                 <div className={style.contentSubTitle}>관리 사업장</div>
                 <div>
-                  <button className={style.layoutContainer2Button} onClick={this.openModifyModal.bind(this)}>수정</button>
+                  <button
+                    className={style.layoutContainer2Button}
+                    onClick={this.openModifyModal.bind(this)}
+                  >
+                    수정
+                  </button>
                 </div>
               </div>
               <div className={style.layotContainer2TableContainer}>
-                {!this.state.data2 && (<div className={style.layotContainer2TableContainerNone}>사용자를 선택해주세요</div>)}
+                {!this.state.data2 && (
+                  <div className={style.layotContainer2TableContainerNone}>
+                    사용자를 선택해주세요
+                  </div>
+                )}
                 {this.state.data2 && (
-                  <Table 
-                    columnNames={{name: '이름', phone: '휴대전화 번호', joined: '회원가입', lastStateDate: "최종 상태 일자"}}
-                    columnWidths={{name: 25, phone: 30, joined: 15, lastStateDate: 25}} 
-                    data={this.state.data} 
-                    onClickCheckbox={this.handleClickCheckbox.bind(this)} />
+                  <Table
+                    columnNames={{
+                      name: "이름",
+                      phone: "휴대전화 번호",
+                      joined: "회원가입",
+                      lastStateDate: "최종 상태 일자",
+                    }}
+                    columnWidths={{
+                      name: 25,
+                      phone: 30,
+                      joined: 15,
+                      lastStateDate: 25,
+                    }}
+                    data={this.state.data}
+                    onClickCheckbox={this.handleClickCheckbox.bind(this)}
+                  />
                 )}
               </div>
             </div>
@@ -159,22 +191,26 @@ export default class Authority extends React.Component {
           onRequestClose={this.closeRegistModal.bind(this)}
           style={{
             content: {
-              top: 'calc((100% - 653px) / 2)',
-              left: 'calc((100% - 842px) / 2)',
+              top: "calc((100% - 658px) / 2)",
+              left: "calc((100% - 611px) / 2)",
               // bottom: 'calc((100% - 842px) / 2)',
               // right: 'calc((100% - 653px) / 2)',
-              width: '842px',
-              height: '653px',
+              width: "611px",
+              height: "658px",
               // marginRight: '-50%',
               // transform: 'translate(-50%, -50%)',
-            }
+            },
           }}
-          contentLabel="Regist Modal" >
-          <div className={style.modalContainer}>
-            <img src={closeIconPng} alt="regist close" style={{float: 'right', cursor: 'pointer'}} onClick={this.closeRegistModal.bind(this)} />
-            <UserRegistModal 
-              
+          contentLabel="Regist Modal"
+        >
+          <div className={uStyle.modalContainer}>
+            <img
+              src={closeIconPng}
+              alt="regist close"
+              style={{ float: "right", cursor: "pointer" }}
+              onClick={this.closeRegistModal.bind(this)}
             />
+            <UserRegistModal />
           </div>
         </ReactModal>
         <ReactModal
@@ -183,22 +219,26 @@ export default class Authority extends React.Component {
           onRequestClose={this.closeModifyModal.bind(this)}
           style={{
             content: {
-              top: 'calc((100% - 653px) / 2)',
-              left: 'calc((100% - 842px) / 2)',
+              top: "calc((100% - 653px) / 2)",
+              left: "calc((100% - 842px) / 2)",
               // bottom: 'calc((100% - 842px) / 2)',
               // right: 'calc((100% - 653px) / 2)',
-              width: '842px',
-              height: '653px',
+              width: "842px",
+              height: "653px",
               // marginRight: '-50%',
               // transform: 'translate(-50%, -50%)',
-            }
+            },
           }}
-          contentLabel="Regist Modal" >
+          contentLabel="Regist Modal"
+        >
           <div className={style.modalContainer}>
-            <img src={closeIconPng} alt="regist close" style={{float: 'right', cursor: 'pointer'}} onClick={this.closeModifyModal.bind(this)} />
-            <WorkplaceModifyModal 
-
+            <img
+              src={closeIconPng}
+              alt="regist close"
+              style={{ float: "right", cursor: "pointer" }}
+              onClick={this.closeModifyModal.bind(this)}
             />
+            <WorkplaceModifyModal />
           </div>
         </ReactModal>
       </div>
