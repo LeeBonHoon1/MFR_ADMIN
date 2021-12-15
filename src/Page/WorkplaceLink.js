@@ -34,7 +34,7 @@ export default class WorkplaceLink extends React.Component {
   render() {
     return (
       <div>
-        <div className={style.contentTitle}>얼굴등록 링크보내기</div>
+        <div className={style.contentTitle2}>얼굴등록 링크보내기</div>
         <div className={style.box1}>
           <div className={style.box1Title}>
             <div>발송방법 선택</div>

@@ -15,7 +15,7 @@ export default class SignUpResult extends React.Component {
   render() {
     return (
       <>
-      <div className={style.signupTitle}>회원가입 정보 입력</div>
+      <div className={style.signupTitle2}>회원가입 정보 입력</div>
       <div className={style.fullContainer}>
         <div calssName={style.signupResultContainer}>
           <div className={style.signUpResultTextContainer}>
