@@ -6,6 +6,18 @@
       "name": "이택수"
     }
   ],
+  "sendUsers": [
+    {"idx": 1, "name":	"김가나", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 2, "name":	"이두니", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 3, "name":	"강가비", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 4, "name":	"김주호", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 5, "name":	"임지조", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 6, "name":	"김가나", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 7, "name":	"이두니", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 8, "name":	"강가비", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 9, "name":	"김주호", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"},
+    {"idx": 10, "name":	"임지조", "phone":	"010-1234-5678", "email":	"12345667@samsung.com"}
+  ],
   "notices": [
     {
       "idx": 1,
@@ -38,7 +50,54 @@
     {"idx": 3, "name": "화성캠퍼스 P2", "address": "서울 중구 순화동 175", "sms": "KNOX API v2", "mail": "KNOX API v2", "qr": "https://mfr.s1.co.kr/njzqUTtwsssdflsdmfdlskmfdlksdsgfknmerl;mgdf;lkmglfkmsdDDDsdfklmdsflkmdsm"}
   ],
   "servers": [
-    {"idx": 1, "name": "템플릿 서버 1", "workplace": "평택캠퍼스 P1", "state": 1, "lastStateDate": "20211221"},
-    {"idx": 2, "name": "템플릿 서버 2", "workplace": "수원캠퍼스 P1", "state": 1, "lastStateDate": "20211220"}
+    {"idx": 1, "name": "템플릿 서버 1", "workplace":	"평택캠퍼스 P1", "state":	1, "lastStateDate":	"20211221"},
+    {"idx": 2, "name": "템플릿 서버 1", "workplace":	"평택캠퍼스 P1", "state":	1, "lastStateDate":	"20211221"},
+    {"idx": 3, "name": "템플릿 서버 1", "workplace":	"평택캠퍼스 P1", "state":	0, "lastStateDate":	"20211221"},
+    {"idx": 4, "name": "템플릿 서버 1", "workplace":	"평택캠퍼스 P1", "state":	1, "lastStateDate":	"20211221"},
+    {"idx": 5, "name": "템플릿 서버 1", "workplace":	"평택캠퍼스 P2", "state":	1, "lastStateDate":	"20211222"},
+    {"idx": 6, "name": "템플릿 서버 1", "workplace":	"평택캠퍼스 P2", "state":	1, "lastStateDate":	"20211221"},
+    {"idx": 7, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P1", "state":	1, "lastStateDate":	"20211224"},
+    {"idx": 8, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P2", "state":	1, "lastStateDate":	"20211223"},
+    {"idx": 9, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P1", "state":	1, "lastStateDate":	"20211221"},
+    {"idx": 10, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P2", "state":	1, "lastStateDate":	"20211222"},
+    {"idx": 11, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P1", "state":	1, "lastStateDate":	"20211224"},
+    {"idx": 12, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P2", "state":	1, "lastStateDate":	"20211223"},
+    {"idx": 13, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P1", "state":	1, "lastStateDate":	"20211221"},
+    {"idx": 14, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P2", "state":	1, "lastStateDate":	"20211222"},
+    {"idx": 15, "name": "템플릿 서버 1", "workplace":	"화성캠퍼스 P1", "state":	1, "lastStateDate":	"20211222"}
+  ],
+  "processes": [
+    {"idx": 1, "workplace": "평택캠퍼스 P1", "name":	"이*하", "registed": "미진행", "state":	"-",	"lastDate": "2021-12-21"},
+    {"idx": 2, "workplace": "평택캠퍼스 P1", "name":	"김*자", "registed": "진행중", "state":	"1.본인인증",	"lastDate": "2021-12-21"},
+    {"idx": 3, "workplace": "평택캠퍼스 P1", "name":	"배*서", "registed": "진행중", "state":	"1.본인인증",	"lastDate": "2021-12-21"},
+    {"idx": 4, "workplace": "평택캠퍼스 P1", "name":	"이*하", "registed": "실패", "state":	"3.사진촬영",	"lastDate": "2021-12-21"},
+    {"idx": 5, "workplace": "평택캠퍼스 P2", "name":	"김*자", "registed": "진행중", "state":	"2.임직원확인",	"lastDate": "2021-12-22"},
+    {"idx": 6, "workplace": "평택캠퍼스 P2", "name":	"배*서", "registed": "진행중", "state":	"4.사진등록",	"lastDate": "2021-12-21"},
+    {"idx": 7, "workplace": "화성캠퍼스 P1", "name":	"이*하", "registed": "진행중", "state":	"4.사진등록",	"lastDate": "2021-12-24"},
+    {"idx": 8, "workplace": "화성캠퍼스 P2", "name":	"김*자", "registed": "완료", "state":	"5.최종완료",	"lastDate": "2021-12-23"},
+    {"idx": 9, "workplace": "화성캠퍼스 P1", "name":	"배*서", "registed": "완료", "state":	"5.최종완료",	"lastDate": "2021-12-21"},
+    {"idx": 10, "workplace": "화성캠퍼스 P2", "name":	"이*하", "registed": "미진행", "state":	"-",	"lastDate": "2021-12-22"},
+    {"idx": 11, "workplace": "화성캠퍼스 P1", "name":	"김*자", "registed": "미진행", "state":	"-",	"lastDate": "2021-12-24"},
+    {"idx": 12, "workplace": "화성캠퍼스 P2", "name":	"배*서", "registed": "미진행", "state":	"-",	"lastDate": "2021-12-23"},
+    {"idx": 13, "workplace": "화성캠퍼스 P1", "name":	"이*하", "registed": "진행중", "state":	"2.임직원확인",	"lastDate": "2021-12-21"},
+    {"idx": 14, "workplace": "화성캠퍼스 P2", "name":	"김*자", "registed": "진행중", "state":	"2.임직원확인",	"lastDate": "2021-12-22"},
+    {"idx": 15, "workplace": "화성캠퍼스 P1", "name":	"배*서", "registed": "진행중", "state":	"2.임직원확인",	"lastDate": "2021-12-22"}
+  ],
+  "userinfos": [
+    {"idx": 1, "name": "이*하", "phone": "010-0000-0000", "joined": 1, "lastStateDate":	"2021-12-21"},
+    {"idx": 2, "name": "김*자", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-21"},
+    {"idx": 3, "name": "배*서", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-21"},
+    {"idx": 4, "name": "이*하", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-21"},
+    {"idx": 5, "name": "김*자", "phone": "010-0000-0000", "joined": 1, "lastStateDate":	"2021-12-22"},
+    {"idx": 6, "name": "배*서", "phone": "010-0000-0000", "joined": 1, "lastStateDate":	"2021-12-21"},
+    {"idx": 7, "name": "이*하", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-24"},
+    {"idx": 8, "name": "김*자", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-23"},
+    {"idx": 9, "name": "배*서", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-21"},
+    {"idx": 10, "name": "이*하", "phone": "010-0000-0000", "joined": 1, "lastStateDate":	"2021-12-22"},
+    {"idx": 11, "name": "김*자", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-24"},
+    {"idx": 12, "name": "배*서", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-23"},
+    {"idx": 13, "name": "이*하", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-21"},
+    {"idx": 14, "name": "김*자", "phone": "010-0000-0000", "joined": 0, "lastStateDate":	"2021-12-22"},
+    {"idx": 15, "name": "배*서", "phone": "010-0000-0000", "joined": 1, "lastStateDate":	"2021-12-22"}
   ]
 }

@@ -39,15 +39,7 @@ const Table = (props) => {
 
   return (
     <>
-    <div className={style.tableContainer}>
-      <div className={style.topButtonContainer}>
-      {props.topButtonItem && (  
-        <button className={style.topButton} onClick={props.topButtonItem.onClick}>
-          {props.topButtonItem.text}
-        </button>
-      )}
-      </div>
-      <div className={style.tableContainer2}>
+      <div className={style.tableContainer4}>
         <table 
           // ref={container}
         >
@@ -74,7 +66,6 @@ const Table = (props) => {
           </tbody>
         </table>
       </div>
-    </div>
     </>
   )
 }

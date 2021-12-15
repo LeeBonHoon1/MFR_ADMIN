@@ -33,26 +33,25 @@ const Table = (props) => {
     // }
   }, [props]);
 
+  const handleChangeCheckbox = (e, idx) => {
+    console.log(e, idx);
+
+    props.onClickCheckbox && props.onClickCheckbox(idx);
+  }
+
   if(!props?.columnWidths) {
     return null;
   }
 
   return (
     <>
-    <div className={style.tableContainer}>
-      <div className={style.topButtonContainer}>
-      {props.topButtonItem && (  
-        <button className={style.topButton} onClick={props.topButtonItem.onClick}>
-          {props.topButtonItem.text}
-        </button>
-      )}
-      </div>
-      <div className={style.tableContainer2}>
+      <div className={style.tableContainer5}>
         <table 
           // ref={container}
         >
           <thead>
             <tr>
+              <th width="5%"></th>
               <th width="5%">번호</th>
               {props.columnNames && Object.keys(props.columnNames).map((v, i) => (
                 <th key={i} width={`${props?.columnWidths[v]+'%' || ''}` }>{props.columnNames[v]}</th>
@@ -62,6 +61,7 @@ const Table = (props) => {
           <tbody>
             {props?.data?.map((v, i) => (
               <tr key={i}>
+                <td><input type="checkbox" onChange={(e) => {handleChangeCheckbox(e, v.idx)}} /></td>
                 <td>{props.data.length - i}</td>
                 {props.columnNames && Object.keys(props?.columnNames).map((vv, ii) => (
                   <td key={ii} 
@@ -74,7 +74,6 @@ const Table = (props) => {
           </tbody>
         </table>
       </div>
-    </div>
     </>
   )
 }

@@ -588,10 +588,9 @@
   top: 301px; */
   /* width: 1521px;
   height: 653px; */
-  width: 100%;
+  /* width: 100%; */
+  width: calc(100% - 60px);
   max-width: 1521px;
-  
-
   
   box-sizing: border-box;
 
@@ -666,7 +665,7 @@
 
 .topButtonContainer {
   height: 39px;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   text-align: right;
 }
 
@@ -775,7 +774,7 @@
   /* margin-left: 78px; */
   
   display: inline-block;
-  width: 88px;
+  width: 101px;
   text-align: right;
 
   margin-left: 68px;
@@ -1266,4 +1265,810 @@
 
 .modalFormRadioContainer2 {
   width: 180px;
+}
+
+.box1 {
+  /* position: absolute;
+  left: 298px;
+  top: 245px; */
+  width: 1568px;
+  height: 139px;
+
+  background: #F1F1F1;
+
+  /* position: absolute;
+  width: 127px;
+  height: 32px;
+  left: 322px;
+  top: 271px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 20px 100px;
+}
+
+.box1ButtonContainer {
+  height: fit-content;
+}
+
+.box1ButtonContainer button {
+  /* position: absolute;
+  left: 1722px;
+  top: 295px; */
+  width: 102px;
+  height: 60px;
+
+  background: #0072CE;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  height: 60px;
+  left: 90.2%;
+  right: 5.51%;
+  top: 294px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 46px;
+  /* or 230% */
+
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+
+  color: #FFFFFF;
+}
+
+.box1Title {
+  margin-bottom: 5px;
+}
+
+.box1RadioBox {
+  padding: 10px;
+}
+.box1RadioBox input {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.layoutContainer1 {
+  display: flex;
+  margin: 20px 100px;
+}
+
+.layoutContainer1>div:first-child {
+  padding-right: 30px;
+  border-right: 1px solid #000000;
+}
+
+.layoutContainer1>div:last-child {
+  padding-left: 30px;
+}
+
+.layoutContainer1Title {
+  /* position: absolute;
+  width: 81px;
+  height: 32px;
+  left: 322px;
+  top: 389px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+}
+
+.layoutContainer1Box {
+  /* position: absolute;
+  left: 322px;
+  top: 434px; */
+  width: 440px;
+  /* height: 599px; */
+  height: 680px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 415px;
+  height: 96px;
+  left: 347px;
+  top: 455px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+
+  color: #000000;
+
+  padding: 10px;
+}
+
+.box2 {
+  /* Rectangle 48 */
+  /* position: absolute;
+  left: 833px;
+  top: 434px; */
+  width: 914px;
+  /* height: 113px; */
+
+  background: #F1F1F1;
+
+  display: flex;
+
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.box2Label {
+  /* position: absolute;
+  left: 868px;
+  top: 446px; */
+  /* width: 86px; */
+  width: 150px;
+  height: 32px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box */
+}
+
+.excelsheetDownloadButton {
+  /* position: absolute;
+  left: 1024px;
+  top: 444px; */
+  width: 192px;
+  height: 39px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  
+  /* position: absolute;
+  height: 39px;
+  left: 54.29%;
+  right: 37.62%;
+  top: 444px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* line-height: 46px; */
+  /* or 230% */
+
+
+  color: #000000;
+}
+
+.box2InputText1 {
+  /* position: absolute;
+  left: 1024px;
+  top: 565px; */
+  width: 141px;
+  height: 41px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 102px;
+  height: 32px;
+  left: 1192px;
+  top: 568px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  /* color: #777777; */
+
+  margin-right: 10px;
+
+}
+
+.box2InputText2 {
+  /* position: absolute;
+  left: 1181px;
+  top: 565px; */
+  width: 300px;
+  height: 41px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 102px;
+  height: 32px;
+  left: 1192px;
+  top: 568px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  /* color: #777777; */
+
+  margin-right: 10px;
+}
+
+.box2Button {
+  /* Rectangle 28 */
+  /* position: absolute;
+  left: 1494px;
+  top: 567px; */
+  width: 102px;
+  height: 39px;
+
+  background: #0072CE;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  height: 39px;
+  left: 78.32%;
+  right: 17.38%;
+  top: 567px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* line-height: 46px; */
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.tableContainer3 {
+  min-height: 410px;
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+.tableContainer3 table {
+  width: 100%;
+  text-align: center;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableContainer3 table thead {
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 985px;
+  height: 40px;
+
+  background: #C4C4C4;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.tableContainer3 table tbody tr{
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 985px;
+  height: 40px;
+
+  background: #FFFFFF;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.tableContainer4 {
+  min-height: 410px;
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+.tableContainer4 table {
+  width: 100%;
+  text-align: center;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableContainer4 table thead {
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 985px;
+  height: 40px;
+
+  background: #C4C4C4;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.tableContainer4 table tbody tr{
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 985px;
+  height: 40px;
+
+  background: #FFFFFF;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.box3 {
+  /* position: absolute;
+  left: 298px;
+  top: 224px; */
+  width: 1568px;
+  /* height: 139px; */
+
+  background: #F1F1F1;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.box3Row {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.box3Label {
+  /* position: absolute;
+  left: 329px;
+  top: 245px; */
+  /* width: 41px; */
+  height: 32px;
+  width: 150px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+  margin: 0 20px;
+}
+
+.box3Select {
+  /* position: absolute;
+  left: 448px;
+  top: 245px; */
+  width: 123px;
+  height: 36px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin-right: 50px;
+
+  /* position: absolute;
+  width: 41px;
+  height: 32px;
+  left: 454px;
+  top: 246px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.box3SearchButtonWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.box3SearchButtonWrapper button {
+  /* position: absolute;
+  left: 1722px;
+  top: 280px; */
+  width: 102px;
+  height: 60px;
+
+  background: #0072CE;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  height: 60px;
+  left: 90.2%;
+  right: 5.51%;
+  top: 279px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 46px;
+  /* or 230% */
+
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+
+  color: #FFFFFF;
+
+}
+
+.tableContainer5 {
+  min-height: 653px;
+  width: 887px;
+  border: 1px solid #000000;
+}
+
+.tableContainer5 table {
+  width: 100%;
+  text-align: center;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableContainer5 table thead {
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 887px;
+  height: 40px;
+
+  background: #C4C4C4;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.tableContainer5 table tbody tr{
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 887px;
+  height: 40px;
+
+  background: #FFFFFF;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.box4 {
+  /* position: absolute;
+  left: 298px;
+  top: 224px; */
+  width: 1568px;
+  height: 112px;
+
+  background: #F1F1F1;
+  
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box4Cotnainer {
+  display: flex;
+  align-items: center;
+}
+
+.box4Label {
+  /* position: absolute;
+  left: 329px;
+  top: 260px; */
+  /* width: 41px; */
+  /* width: 158px; */
+  height: 32px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+  margin-left: 10px;
+  margin-right: 20px;
+  padding-right: 10px;
+  /* text-align: right; */
+}
+
+.box4Button {
+  /* position: absolute;
+  left: 1722px;
+  top: 250px; */
+  width: 102px;
+  height: 60px;
+
+  background: #0072CE;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  height: 60px;
+  left: 90.2%;
+  right: 5.51%;
+  top: 249px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 46px;
+  /* or 230% */
+
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+
+  color: #FFFFFF;
+
+}
+
+.box4InputText1 {
+  /* position: absolute;
+  left: 399px;
+  top: 260px; */
+  width: 123px;
+  height: 36px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.box4InputText2 {
+  /* position: absolute;
+  left: 726px;
+  top: 260px; */
+  width: 176px;
+  height: 36px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.box4Select {
+  /* position: absolute;
+  left: 1077px;
+  top: 260px; */
+  width: 123px;
+  height: 36px;
+  
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.contentSubTitle {
+  /* position: absolute;
+  left: 322px;
+  top: 344px; */
+  /* width: 107px; */
+  height: 32px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.layoutContainer2Container {
+  margin-left: 40px;
+}
+
+.layoutContainer2 {
+  display: flex;
+}
+
+.layoutContainer2>div {
+  margin: 30px;
+}
+
+.layoutContainer2TopContainer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+
+.layotContainer2TableContainer {
+  /* position: absolute;
+  left: 1287px;
+  top: 393px; */
+  width: 497px;
+  height: 644px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin: 10px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layotContainer2TableContainerNone {
+  /* position: absolute;
+  width: 208px;
+  height: 32px;
+  left: 1435px;
+  top: 683px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+}
+
+.layoutContainer2Button {
+  /* position: absolute;
+  left: 978px;
+  top: 340px; */
+  width: 115px;
+  height: 39px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  height: 39px;
+  left: 51.51%;
+  right: 43.65%;
+  top: 340px; */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* line-height: 46px; */
+  /* or 230% */
+
+  text-align: center;
+
+  color: #000000;
+
+  background-color: #FFFFFF;
+  margin-left: 10px;
 }
