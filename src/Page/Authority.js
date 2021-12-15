@@ -6,6 +6,8 @@ import style from '../Css/Main.module.css';
 import inputDateRangeExamPng from '../assets/input-date-range-exam.png';
 import closeIconPng from '../assets/close-icon.png';
 import ReactModal from 'react-modal';
+import WorkplaceModifyModal from '../Component/WorkplaceModifyModal';
+import UserRegistModal from '../Component/UserRegistModal';
 
 const JOINED = [
   '미완료',
@@ -170,6 +172,9 @@ export default class Authority extends React.Component {
           contentLabel="Regist Modal" >
           <div className={style.modalContainer}>
             <img src={closeIconPng} alt="regist close" style={{float: 'right', cursor: 'pointer'}} onClick={this.closeRegistModal.bind(this)} />
+            <UserRegistModal 
+              
+            />
           </div>
         </ReactModal>
         <ReactModal
@@ -191,6 +196,9 @@ export default class Authority extends React.Component {
           contentLabel="Regist Modal" >
           <div className={style.modalContainer}>
             <img src={closeIconPng} alt="regist close" style={{float: 'right', cursor: 'pointer'}} onClick={this.closeModifyModal.bind(this)} />
+            <WorkplaceModifyModal 
+
+            />
           </div>
         </ReactModal>
       </div>
