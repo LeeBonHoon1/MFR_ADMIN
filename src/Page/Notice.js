@@ -10,6 +10,7 @@ import closeIconPng from '../assets/close-icon.png';
 import trashIconPng from '../assets/trash-icon.png';
 import inputFileExamPng from '../assets/input-file-exam.png';
 import inputDateRangeExamPng from '../assets/input-date-range-exam.png';
+import { getNotices } from '../service/nc-api.js';
 
 const CATEGORY = [
   '배포', // 0 
@@ -27,7 +28,7 @@ export default class Notice extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/notices')
+    getNotices()
     .then((res) => {
       if(res.data) {
         this.setState({

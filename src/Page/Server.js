@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import Table from '../Component/Table';
+import { getServers } from '../service/nc-api.js';
 import style from '../Css/Main.module.css';
 import { filterDate } from '../utils';
 
@@ -21,7 +22,7 @@ export default class Server extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/servers')
+    getServers()
     .then((res) => {
       if(res.data) {
         this.setState({

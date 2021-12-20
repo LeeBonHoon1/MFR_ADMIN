@@ -10,6 +10,7 @@ import closeIconPng from "../assets/close-icon.png";
 import ReactModal from "react-modal";
 import WorkplaceModifyModal from "../Component/WorkplaceModifyModal";
 import UserRegistModal from "../Component/UserRegistModal";
+import { getUserinfos, getWorkplacesByUserIdx } from "../service/nc-api.js";
 
 const JOINED = ["미완료", "완료"];
 
@@ -27,7 +28,8 @@ export default class Authority extends React.Component {
   }
 
   componentDidMount() {
-    axios.get("http://localhost:4000/userinfos").then((res) => {
+    getUserinfos()
+    .then((res) => {
       if (res.data) {
         this.setState({
           ...this.state,
@@ -41,9 +43,8 @@ export default class Authority extends React.Component {
   }
 
   handleClickRow(idx) {
-    console.log('handleClickRow ::: ', idx);
-
-    axios.get("http://localhost:4000/workplacesByUserIdx").then((res) => {
+    getWorkplacesByUserIdx()
+    .then((res) => {
       if (res.data) {
         this.setState({
           ...this.state,
@@ -211,6 +212,7 @@ export default class Authority extends React.Component {
               height: "658px",
               // marginRight: '-50%',
               // transform: 'translate(-50%, -50%)',
+              overflow: "hidden",
             },
           }}
           contentLabel="Regist Modal"
@@ -231,19 +233,19 @@ export default class Authority extends React.Component {
           onRequestClose={this.closeModifyModal.bind(this)}
           style={{
             content: {
-              top: "calc((100% - 653px) / 2)",
-              left: "calc((100% - 842px) / 2)",
+              top: "calc((100% - 796px) / 2)",
+              left: "calc((100% - 914px) / 2)",
               // bottom: 'calc((100% - 842px) / 2)',
               // right: 'calc((100% - 653px) / 2)',
-              width: "842px",
-              height: "653px",
+              width: "914px",
+              height: "796px",
               // marginRight: '-50%',
               // transform: 'translate(-50%, -50%)',
             },
           }}
-          contentLabel="Regist Modal"
+          contentLabel="Modify Modal"
         >
-          <div className={style.modalContainer}>
+          <div className={style.modalContainer2}>
             <img
               src={closeIconPng}
               alt="regist close"

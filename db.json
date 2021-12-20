@@ -116,5 +116,22 @@
     {"workplace": "화성캠퍼스 P2", "power": 1},
     {"workplace": "화성캠퍼스 P3", "power": 1},
     {"workplace": "화성캠퍼스 P4", "power": 1}  
+  ],
+  "allWorkplaces": [
+    {"idx": 1, "workplace": "에스원 본사"},
+    {"idx": 2, "workplace": "강북 삼성병원"},
+    {"idx": 3, "workplace": "네이버 사옥"},
+    {"idx": 4, "workplace": "MBN 사옥"},
+    {"idx": 5, "workplace": "서초 삼성생명"},
+    {"idx": 6, "workplace": "네이버 팩토리"},
+    {"idx": 7, "workplace": "네이버 사옥2"},
+    {"idx": 8, "workplace": "MBN 사옥2"},
+    {"idx": 9, "workplace": "서초 삼성생명2"},
+    {"idx": 10, "workplace": "네이버 팩토리2"}
+  ],
+  "selectedWorkplaces": [
+    {"idx": 0, "workplace": "에스원 본사", "state": 1},
+    {"idx": 0, "workplace": "강북 삼성병원", "state": 2},
+    {"idx": 0, "workplace": "네이버사옥", "state": 2}
   ]
 }

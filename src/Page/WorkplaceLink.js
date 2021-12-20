@@ -6,6 +6,7 @@ import trashIconPng from '../assets/trash-icon.png';
 
 import Table from '../Component/Table2';
 import axios from 'axios';
+import { getSendUsers } from '../service/nc-api.js';
 
 export default class WorkplaceLink extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ export default class WorkplaceLink extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/sendUsers')
+    getSendUsers()
     .then((res) => {
       if(res.data) {
         this.setState({

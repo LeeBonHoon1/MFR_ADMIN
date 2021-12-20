@@ -4,6 +4,7 @@ import style from '../Css/Main.module.css';
 import inputDateRangePng from '../assets/input-date-range-exam.png';
 import axios from 'axios';
 import Table from '../Component/Table3';
+import { getProcesses } from '../service/nc-api.js';
 
 export default class WorkplaceRegist extends React.Component {
   constructor(props) {
@@ -16,7 +17,7 @@ export default class WorkplaceRegist extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/processes')
+    getProcesses()
     .then((res) => {
       if(res.data) {
         this.setState({

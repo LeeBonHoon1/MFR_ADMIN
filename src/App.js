@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Page from './Page';
 import { AuthContext } from "./Context";
+import { ecryptInfoText } from "./utils";
 
 
 function App() {
   const [auth, setAuth] = useState({
-    state: localStorage.getItem('auth') || null,
+    state: JSON.parse(localStorage.getItem('auth')) || null,
     // state: {},
     set: (_state) => {
       if(_state) {
@@ -21,6 +22,7 @@ function App() {
 
   useEffect(() => {
     // console.log('auth :::', auth);
+    ecryptInfoText();
   }, [auth])
 
   return (

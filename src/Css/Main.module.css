@@ -2160,3 +2160,284 @@
 
   color: #000000;  
 }
+
+.modalContainer2 {
+  padding: 10px 30px;
+}
+
+.modalTitle3 {
+  /* position: absolute;
+  width: 107px;
+  height: 32px;
+  left: 729px;
+  top: 251px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.modalLabel {
+  /* position: absolute;
+  left: 729px;
+  top: 325px; */
+  /* width: 41px; */
+  width: 150px;
+  height: 32px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.modalTopContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 10px 0;
+}
+
+.modalTopContent div {
+  display: flex;
+  align-items: center;
+}
+
+.modalInput {
+  /* position: absolute;
+  left: 841px;
+  top: 320px; */
+  width: 200px;
+  height: 41px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* position: absolute;
+  width: 51px;
+  height: 32px;
+  left: 858px;
+  top: 325px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 22px;
+  /* line-height: 32px; */
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.tableContainer7 {
+  /* min-height: 653px; */
+  min-height: 460px;
+  width: 314px;
+  border: 1px solid #000000;
+  height: 100%;
+}
+
+.tableContainer7 table {
+  width: 100%;
+  text-align: center;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableContainer7 table thead {
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 314px;
+  height: 40px;
+
+  background: #C4C4C4;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+.tableContainer7 table tr{
+  padding: 10px;
+}
+
+.tableContainer7 table tbody tr{
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  /* width: 887px; */
+  height: 40px;
+
+  background: #FFFFFF;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+
+}
+
+.tableContainer8 {
+  /* min-height: 653px; */
+  min-height: 460px;
+  width: 446px;
+  border: 1px solid #000000;
+  height: 100%;
+}
+
+.tableContainer8 table {
+  width: 100%;
+  text-align: center;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableContainer8 table thead {
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  width: 446px;
+  height: 40px;
+
+  background: #C4C4C4;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.tableContainer8 table tr{
+  padding: 10px;
+}
+
+.tableContainer8 table tbody tr{
+  /* position: absolute;
+  left: 329px;
+  top: 301px; */
+  /* width: 887px; */
+  height: 40px;
+
+  background: #FFFFFF;
+
+  /* position: absolute;
+  width: 37px;
+  height: 29px;
+  left: 1026px;
+  top: 310px; */
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  color: #000000;  
+}
+
+.modalContentContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modalContentContainerTitle1 {
+  /* position: absolute;
+  left: 729px;
+  top: 406px; */
+  /* width: 87px; */
+  height: 26px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.modalContentContainerTitle2 {
+  /* position: absolute;
+  left: 1142px;
+  top: 406px; */
+  /* width: 87px; */
+  height: 26px;
+
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+
+
+  color: #0072CE;
+
+  margin-bottom: 10px;
+}
+
+.modalContentContainerButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+}
+
+.modalContentContainerButtonsContainer button {
+
+}

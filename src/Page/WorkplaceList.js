@@ -1,11 +1,13 @@
-import axios from 'axios';
 import React from 'react';
 import ReactModal from 'react-modal';
 import Table from '../Component/Table';
 import style from '../Css/Main.module.css';
 import { filterLongText } from '../utils';
+import axios from 'axios';
 
 import closeIconPng from '../assets/close-icon.png';
+import WorkplaceRegistModal from '../Component/WorkplaceRegistModal';
+import { getWorkplaces } from '../service/nc-api.js';
 
 export default class WorkplaceList extends React.Component {
   constructor(props) {
@@ -18,7 +20,7 @@ export default class WorkplaceList extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/workplaces')
+    getWorkplaces()
     .then((res) => {
       if(res.data) {
         this.setState({
@@ -78,109 +80,9 @@ export default class WorkplaceList extends React.Component {
           contentLabel="Regist Modal" >
           <img src={closeIconPng} alt="regist close" style={{float: 'right', cursor: 'pointer'}} onClick={this.closeRegistModal.bind(this)} />
           <div className={style.modalTitle2}>사업장 등록</div>
-          <div className={style.modalContainer}>
-            {/* 기본정보 */}
-            <div className={style.modalSubTitle}>기본정보</div>
-            <div className={style.modalSubContainer}>
-              <div className={style.modalRow1}>
-                <label className={style.modalFormLabel1}>제목</label>
-                <input className={style.modalFormInputText2} placeholder='화성 캠퍼스' />
-                <input className={style.modalFormInputText3} placeholder='P1 정문' />
-              </div>
-              <div className={style.modalRow1}>
-                <label className={style.modalFormLabel1}>주소</label>
-                <input className={style.modalFormInputText4} placeholder='' />
-              </div>
-              <div className={style.modalRow1}>
-                <label className={style.modalFormLabel1}>비고</label>
-                <input className={style.modalFormInputText4} placeholder='' />
-              </div>
-              <div className={style.modalRow1}>
-                <label className={style.modalFormLabel1}>URL</label>
-                <button className={style.modalFormGenButton1}>생성하기</button>
-                <input className={style.modalFormInputText5} placeholder='' />
-              </div>
-              <div className={style.modalRow3}>
-                <div className={style.qrImageContainer}>
-                  QR CODE IMAGE
-                </div>
-                <button className={style.modalFormDownloadButton1}>다운로드</button>
-              </div>
-            </div>
-            {/* 전송정보 */}
-            <div className={style.modalSubTitle}>전송정보</div>
-            <div className={style.modalSubContainer}>
-              <div className={style.modalRow1}>
-                <label className={style.modalFormLabel1}>총무담당자</label>
-                <input className={style.modalFormInputText2} placeholder='이름' />
-                <input className={style.modalFormInputText3} placeholder='전화번호(번호만 입력)' />
-              </div>
-              <div className={style.modalRow2}>
-                <label className={style.modalFormLabel1}>SMS</label>
-                <div>
-                  <div className={style.modalFormRadioContainer}>
-                    <div className={style.modalFormRadioContainer2}>
-                      <input type="radio" name="sms" className={style.modalFormInputRadio}/>
-                      <label className={style.modalFormRadioLabel}>문자전송</label>
-                    </div>
-                    <input placeholder='아이디' className={style.modalFormInputText6} />
-                    <input placeholder='비밀번호' className={style.modalFormInputText6} />
-                  </div>
-                  <div className={style.modalFormRadioContainer}>
-                    <div className={style.modalFormRadioContainer2}>
-                      <input type="radio" name="sms" className={style.modalFormInputRadio}/>
-                      <label className={style.modalFormRadioLabel}>KNOX API v1</label>
-                    </div>
-                    <input placeholder='key입력' className={style.modalFormInputText6} disabled />
-                    <input placeholder='key입력' className={style.modalFormInputText6} disabled />
-                  </div>
-                  <div className={style.modalFormRadioContainer}>
-                    <div className={style.modalFormRadioContainer2}>
-                      <input type="radio" name="sms" className={style.modalFormInputRadio}/>
-                      <label className={style.modalFormRadioLabel}>KNOX API v2</label>
-                    </div>
-                    <input placeholder='key입력' className={style.modalFormInputText6} disabled />
-                    <input placeholder='key입력' className={style.modalFormInputText6} disabled />
-                  </div>
-                </div>
-              </div>
-              <div className={style.modalRow2}>
-                <label className={style.modalFormLabel1}>SMTP</label>
-                <div>
-                  <div className={style.modalFormRadioContainer}>
-                    <div className={style.modalFormRadioContainer2}>
-                      <input type="radio" name="sms" className={style.modalFormInputRadio}/>
-                      <label className={style.modalFormRadioLabel}>SMTP</label>
-                    </div>
-                    <input placeholder='주소' className={style.modalFormInputText7} />
-                    <input placeholder='포트번호' className={style.modalFormInputText7} />
-                    <input placeholder='아이디' className={style.modalFormInputText7} />
-                    <input placeholder='비밀번호' className={style.modalFormInputText7} />
-                  </div>
-                  <div className={style.modalFormRadioContainer}>
-                    <div className={style.modalFormRadioContainer2}>
-                      <input type="radio" name="sms" className={style.modalFormInputRadio}/>
-                      <label className={style.modalFormRadioLabel}>KNOX API v1</label>
-                    </div>
-                    <input placeholder='key입력' className={style.modalFormInputText6} disabled />
-                    <input placeholder='key입력' className={style.modalFormInputText6} disabled />
-                  </div>
-                  <div className={style.modalFormRadioContainer}>
-                    <div className={style.modalFormRadioContainer2}>
-                      <input type="radio" name="sms" className={style.modalFormInputRadio}/>
-                      <label className={style.modalFormRadioLabel}>KNOX API v2</label>
-                    </div>
-                    <input placeholder='key입력' className={style.modalFormInputText6} disabled />
-                    <input placeholder='key입력' className={style.modalFormInputText6} disabled />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={style.modalFormButtonsContainer}>
-              <button className={style.modalFormCancelButton}>취소</button>
-              <button className={style.modalFormConfirmButton}>저장</button>
-            </div>
-          </div>
+          <WorkplaceRegistModal 
+            onClose={this.closeRegistModal.bind(this)}
+          />
         </ReactModal>
       </div>
     );

@@ -4,12 +4,10 @@ import Layout from '../Component/Layout';
 import { AuthContext } from '../Context';
 import Authority from './Authority';
 import Login from './Login';
-import Main from './Main';
 import Notice from './Notice';
 import ResetPassword from './ResetPassword';
 import SearchId from './SearchId';
 import Server from './Server';
-import SignIn from './SignIn';
 import SignUp from './SignUp';
 import SignUpResult from './SignUpResult';
 import WorkplaceLink from './WorkplaceLink';
@@ -24,7 +22,6 @@ function Page() {
     return (
       <Switch>
         <Route path="/" component={Login} exact />
-        <Route path="/signin" component={SignIn} />
         <Route path="/signup" component={SignUp} />
         <Route path="/signupresult" component={SignUpResult} />
         <Route path="/searchid" component={SearchId} />
@@ -37,7 +34,7 @@ function Page() {
   return (
     <Layout history={history}>
       <Switch>
-        <Route path="/" component={Main} exact />
+        <Route path="/" component={Notice} exact />
         <Route path="/notice" component={Notice} />
         <Route path="/workplace/list" component={WorkplaceList} />
         <Route path="/workplace/link" component={WorkplaceLink} />
